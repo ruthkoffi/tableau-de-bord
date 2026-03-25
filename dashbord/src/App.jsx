@@ -29,7 +29,7 @@ export default function App() {
   }
 
   return (
-    <div className="flex min-h-screen bg-stone-50" style={{ fontFamily: "Georgia, serif" }}>
+    <div className="flex min-h-screen " style={{ fontFamily: "Georgia, serif" }}>
 
       {/* Sidebar — cachée sur mobile */}
       <Sidebar activeTab={activeTab} onSwitch={setActiveTab} />
@@ -41,21 +41,21 @@ export default function App() {
         <header className="bg-white border-b border-stone-200 px-4 md:px-6 py-3 flex items-center justify-between sticky top-0 z-20 shadow-sm">
           <div className="flex items-center gap-2">
             <span className="text-xl md:text-2xl font-black text-amber-600" style={{ fontFamily: "Georgia, serif" }}>
-              Wari
+              Entrepeneur
             </span>
             <span className="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-semibold">Pro</span>
           </div>
           <div className="flex items-center gap-2 md:gap-3">
-            <button className="relative p-2 rounded-xl bg-stone-100 hover:bg-stone-200 transition-colors">
+            {/* <button className="relative p-2 rounded-xl bg-stone-100 hover:bg-stone-200 transition-colors">
               <span className="text-base md:text-lg">🔔</span>
               <span className="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full" />
-            </button>
+            </button> */}
             <Avatar initials={userData.avatar} photo={userData.photo} size="sm" />
           </div>
         </header>
 
         {/* Page — padding bottom sur mobile pour la BottomNav */}
-        <main className="flex-1 p-4 md:p-6 pb-24 md:pb-6 w-full max-w-2xl mx-auto md:mx-0">
+        <main className="flex-1 p-4 md:p-6 pb-24 md:pb-6 w-full">
           {renderPage()}
         </main>
 

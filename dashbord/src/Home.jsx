@@ -4,18 +4,14 @@ import QuickAction from "./components/QuickAction";
 import CoursCard   from "./components/CoursCard";
 
 export default function Home({ user, actions, aiSuggestions, onGeneratePlan, onSwitchTab }) {
-  //                                  ^^^^^^^ reçu depuis App.jsx
+  //                                 
   return (
     <div className="space-y-4 md:space-y-5">
 
-      {/* 1. Bienvenue */}
       <Bienvenue user={user} />
 
-      {/* 2. Actions rapides — on passe "actions" tel quel */}
-      <QuickAction actions={actions} onGeneratePlan={onGeneratePlan} />
-      {/*                   ^^^^^^^ même nom que la prop reçue */}
 
-      {/* 3. Cours en cours */}
+      <QuickAction actions={actions} onGeneratePlan={onGeneratePlan} />
       <div>
         <h2 className="text-xs md:text-sm font-bold text-stone-400 uppercase tracking-widest mb-3">
           En cours
@@ -25,7 +21,7 @@ export default function Home({ user, actions, aiSuggestions, onGeneratePlan, onS
         )}
       </div>
 
-      {/* 4. Suggestion IA */}
+      
       <div>
         <div className="flex items-center justify-between mb-3">
           <h2 className="text-xs md:text-sm font-bold text-stone-400 uppercase tracking-widest">

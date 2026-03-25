@@ -3,7 +3,7 @@
 export const userData = {
   name: "Ruth KOFFI",
   domain: "Agro-industrie",
-  avatar: "AK",
+  avatar: "RK",
   photo: null, // Remplacez par le chemin de votre photo ex: "/photo.jpg"
   level: "Intermédiaire",
   points: 1240,

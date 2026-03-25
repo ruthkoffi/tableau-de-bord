@@ -1,10 +1,10 @@
-// src/components/BottomNav.jsx
+import { Home, BookOpen, TrendingUp, Bot } from "lucide-react";
 
 const tabs = [
-  { id: "accueil",     icon: "🏠", label: "Accueil"  },
-  { id: "cours",       icon: "📚", label: "Cours"    },
-  { id: "progression", icon: "📈", label: "Progrès"  },
-  { id: "ia",          icon: "🤖", label: "IA"       },
+  { id: "accueil",     icon: <Home size={20} />,       label: "Accueil" },
+  { id: "cours",       icon: <BookOpen size={20} />,   label: "Cours"   },
+  { id: "progression", icon: <TrendingUp size={20} />, label: "Progrès" },
+  { id: "ia",          icon: <Bot size={20} />,        label: "IA"      },
 ];
 
 export default function BottomNav({ activeTab, onSwitch }) {

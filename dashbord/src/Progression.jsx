@@ -1,5 +1,6 @@
 // src/Progression.jsx
 import Badge from "./components/Badge";
+import { Award, Star } from "lucide-react";
 
 export default function Progression({ user, weekActivity, weekDays }) {
   return (
@@ -33,7 +34,7 @@ export default function Progression({ user, weekActivity, weekDays }) {
                 className="w-10 h-10 md:w-12 md:h-12 rounded-xl flex items-center justify-center text-xl md:text-2xl flex-shrink-0"
                 style={{ backgroundColor: cert.color + "20", border: `2px solid ${cert.color}` }}
               >
-                🎓
+              <Award size={22} style={{ color: cert.color }} />
               </div>
               <div className="flex-1 min-w-0">
                 <p className="font-bold text-stone-800 text-xs md:text-sm truncate">{cert.title}</p>
