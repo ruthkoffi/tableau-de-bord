@@ -1,7 +1,7 @@
 // src/data/userData.js
 
 export const userData = {
-  name: "Amara Konaté",
+  name: "Ruth KOFFI",
   domain: "Agro-industrie",
   avatar: "AK",
   photo: null, // Remplacez par le chemin de votre photo ex: "/photo.jpg"
