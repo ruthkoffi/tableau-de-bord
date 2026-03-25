@@ -1,5 +1,3 @@
-// src/components/Badge.jsx
-
 export default function Badge({ icon, label, earned }) {
   return (
     <div

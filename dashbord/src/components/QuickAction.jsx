@@ -1,6 +1,6 @@
-// src/components/QuickActions.jsx
+// src/components/QuickAction.jsx
 
-export default function QuickActions({ actions, onGeneratePlan }) {
+export default function QuickAction({ actions, onGeneratePlan }) {
   return (
     <div>
       <h2 className="text-sm font-bold text-stone-400 uppercase tracking-widest mb-3">
@@ -11,7 +11,7 @@ export default function QuickActions({ actions, onGeneratePlan }) {
         {actions.map((action, index) => (
           <button
             key={index}
-            onClick={action.isAI ? onGeneratePlan : undefined}
+            onClick={action.isPlan ? onGeneratePlan : undefined} // ✅ isPlan
             className={`
               ${action.color} ${action.hover}
               text-white rounded-2xl p-4 text-left
@@ -19,18 +19,9 @@ export default function QuickActions({ actions, onGeneratePlan }) {
               active:scale-95 shadow-md hover:shadow-lg
             `}
           >
-            {/* Icône */}
             <span className="text-2xl">{action.icon}</span>
-
-            {/* Titre */}
-            <p className="font-bold text-sm mt-2 leading-tight">
-              {action.label}
-            </p>
-
-            {/* Sous-titre */}
-            <p className="text-xs opacity-80 mt-0.5">
-              {action.sub}
-            </p>
+            <p className="font-bold text-sm mt-2 leading-tight">{action.label}</p>
+            <p className="text-xs opacity-80 mt-0.5">{action.sub}</p>
           </button>
         ))}
       </div>
